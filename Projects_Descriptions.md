@@ -5,3 +5,9 @@
 
 **Sudoku Solver** - This is a project I did for fun when trying to self-teach python. The way the sudoku is imputed isn’t super user friendly, which is something I might go back and improve on. Essentially, you enter the unsolved sudoku as a 2D array (array of arrays) with 0’s representing empty boxes. Most of the code’s methods are pretty self-explanatory, so I’ll briefly explain the most complicated part, which is the algorithm the program uses to actually solve the puzzle: backtracking. The backtracking algorithm is a recursive algorithm that works by constantly trying a value for a box, and every time the sudoku puzzle's current configuration is found to be valid (no row, column, or 3x3 box conflicts) it continues to call the algorithm on the next box of the sudoku. It continues to do this, and when it finds invalud placement, it pauses calling itself, and instead “goes back” and tries replacing the previous box’s number. Once the algorithm finds the board is completely solved (no 0’s and no conflicts in rows, columns, 3x3 boxes), it returns “true” and stops modifying the board, meaning the board is now solved. The program doesn’t have a catch case to catch impossible sudokus, though I might look to implement that in the future. 
 
+**approximate_e** - This project is very simple in function and code. It takes in a degree of specificity (accuracy) and uses it to approximate the value of e using the taylor series summation formula. 
+
+**cos calculator** - This project is very simple in function and code. It takes in a value (in radians, as a decimal) and uses the taylor series summation definition of cosine to calculate the cosine of that angle. 
+
+**sin calculator** - This project is very simple in function and code. It takes in a value (in radians, as a decimal) and uses the taylor series summation definition of sin to calculate the sin of that angle.
+
