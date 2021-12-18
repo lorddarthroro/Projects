@@ -16,3 +16,12 @@
 **GameOfLife** - This code was one that we did for my intro to computer science class. We had to model Conway's Game of Life using java graphics. Conway’s Game of Life is an interesting simulation intended to show cool patterns that can arise from a simple set of rules that determine living and dying of cells in the hypothetical it devises. The code we wrote uses a 2D array to store 0’s and 1’s, representing living and dead cells. The rules (which I’m sure can be found very easily online if you are curious) are then followed by checking boxes adjacent to cells, and the whole array is updated using a second array that stores values (to prevent changes earlier in the array from affecting those in later rows/columns). The program uses an interface we wrote that lets the user randomize, start and stop, and control the speed of the simulation. All in all, a simple yet very fun and rewarding project.
 
 **HeartDisease.ipynb** - please ignore the errors, they just came up when I tried running the code from a computer that didn't have direct access to the csv file :P. This is a part of a project I did for my data science class where we learned machine learning in python. Using the jupyter notebook, I read in information from a csv file and used the SVM classifier to create a model that can predict whether or not a patient has heart disease based on 13 variables related to the patients health. 
+
+**StreetMap.java** - this program is one I wrote for my CSC class. It takes a file containing roads and intersections, with names and locations given by latitude and longitude, and generates a map of the location specified with "lines" representing roads, and connecting intersections to one another. The program also includes dijkstra's algorithm and, given an input of two intersection names, can find the shortest path, which it highlights red, and returns the distance of the path as well as the intersections traversed on the path. The way to run this code is a bit weird since I wanted it to be compatible with the terminal. I have a file named "ur.txt" in my github. You can download that and save it to the same location as the java file. Then, to run it in terminal, you can use the format specified below. My files were located in my desktop. 
+
+C:\Users\ahmad>cd desktop
+C:\Users\ahmad\Desktop>javac StreetMap.java
+C:\Users\ahmad\Desktop>java StreetMap ur.txt --show --directions HOYT RUSH-RHEES
+
+**ur.txt** - this text file is a supplement to the StreetMap program, and can be used to see the program run.
+
